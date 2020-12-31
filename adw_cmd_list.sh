@@ -11,5 +11,5 @@
 ##oci db autonomous-database start --profile $PV --autonomous-database-id 
 alias adw_lv='echo current PV is [ $PV ], change it by command of [ export PV=O6AB ]'
 alias adw_ll='oci db autonomous-database list --profile $PV --output table --query "data [*].{C01_ID:id, C00_DbName:\"db-name\"}"'
-alias adw_ls='oci db autonomous-database list --profile $PV --output table --query "data [*].{C00_InsName:\"display-name\", C01_DbName:\"db-name\", C02_OCPU:\"cpu-core-count\", C03_TB:\"data-storage-size-in-tbs\", C04_Verion:\"db-version\", C05_Status:\"lifecycle-state\", C06_CreateTime:\"time-created\"}"'
+alias adw_ls='oci db autonomous-database list --profile $PV --output table --query "data [*].{C00_InsName:\"display-name\", C01_DbName:\"db-name\", C02_OCPU:\"cpu-core-count\", C03_TB:\"data-storage-size-in-tbs\", C04_Verion:\"db-version\",C05_Type:\"db-workload\", C06_Status:\"lifecycle-state\", C07_CreateTime:\"time-created\"}"'
 
