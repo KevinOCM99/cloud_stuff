@@ -89,6 +89,12 @@ scp -o "ProxyCommand ssh opc@129.213.36.8 nc %h %p" opc@129.156.112.218:/tmp/*.t
 ssh -o "ProxyCommand ssh opc@129.213.36.8 nc %h %p" opc@129.156.112.218
 scp -o "ProxyCommand nc --proxy-type http --proxy cn-proxy.cn.oracle.com:80 %h %p" -i ~/.ssh/id_rsa.opc opc@129.156.112.218:/tmp/etc.tar .
 ssh -o "ProxyCommand nc --proxy-type http --proxy cn-proxy.cn.oracle.com:80 %h %p" -i ~/.ssh/id_rsa.opc opc@129.156.112.218
+
+##Jump 
+ssh -o "ProxyCommand ssh -W %h:%p opc@152.67.223.97" opc@152.67.209.209
+ssh -o "ProxyCommand ssh opc@152.67.223.97 nc %h %p" opc@152.67.209.209
+ssh -J opc@152.67.223.97 opc@152.67.209.209
+
 --not a normal port
 scp -P 10022 kzroot@localhost:~/SecureW2_JoinNow.run .
 --proxy for ssh
