@@ -12,6 +12,8 @@
 ##**
 ##oci db autonomous-database generate-wallet --profile $PV --file /tmp/myWallet.zip --password Welcome_1 --autonomous-database-id 
 ##**
+##oci db autonomous-database update --profile $PV --is-auto-scaling-enabled True --autonomous-database-id 
+##**
 ##oci db autonomous-database delete --profile $PV --autonomous-database-id 
 ##**
 ##oci db autonomous-database stop --profile $PV --autonomous-database-id 

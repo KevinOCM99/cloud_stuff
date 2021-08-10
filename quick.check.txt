@@ -443,3 +443,11 @@ sed -i "s#?/network/admin#$HOME/ADWCUSG#" sqlnet.ora
 cat $TNS_ADMIN/tnsnames.ora
 sqlplus admin/WelcomE__12345@db202012311000_low
 
+###################################
+#sqlcl
+###################################
+sql /nolog
+set cloudconfig /tmp/myWallet.zip;
+show tns;
+
+
