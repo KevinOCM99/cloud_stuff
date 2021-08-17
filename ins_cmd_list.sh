@@ -17,8 +17,10 @@
 ##oci compute instance delete --profile $PV --autonomous-database-id 
 ##**
 ##oci compute instance stop --profile $PV --autonomous-database-id 
+##oci compute instance action --action STOP --profile $PV --instance-id 
 ##**
 ##oci compute instance start --profile $PV --autonomous-database-id 
+##oci compute instance action --action START --profile $PV --instance-id
 ##**
 alias ins_hh='echo ins_lv shows current PV, ins_ll shows less, ins_ls shows more and ins_cc to clear'
 alias ins_lv='echo current PV is [ $PV ], change it by command of [ export PV=XX ]'
