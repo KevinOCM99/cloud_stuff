@@ -1,6 +1,7 @@
 ##************* common commands list *************
 ##** create normal **
 ##oci db autonomous-database create --profile $PV --db-name BJSCCADW0506 --cpu-core-count 1 --data-storage-size-in-tbs 1 --admin-password WelcomE__12345
+##oci db autonomous-database create --profile $PV --db-name BJSCCADW0506 --cpu-core-count 1 --data-storage-size-in-tbs 1 --admin-password WelcomE__12345 --db-workload AJD --license-model LICENSE_INCLUDED
 ##** create free-tier **
 ##oci db autonomous-database create --profile $PV --is-free-tier true --db-workload DW --admin-password WelcomE__12345 --db-name ADWCUSG --cpu-core-count 1 --data-storage-size-in-tbs 1
 ##**
