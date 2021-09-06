@@ -178,6 +178,10 @@ nc -w 1 --send-only -v 129.146.91.171 80
 nc -w 1 --proxy-type http --proxy cn-proxy.cn.oracle.com:80 -v 129.146.91.171 80 
 nc -w 3 --send-only -v 129.146.91.171 80 
 nc --proxy-type http --proxy cn-proxy.cn.oracle.com:80 -w 3 --send-only -v 129.146.91.171 80 </dev/null; echo $?
+--mac
+nc -w 1 -X connect -x cn-proxy.cn.oracle.com:80 -v ktmh3krzlasse6mie5inrevah4.apigateway.ap-chuncheon-1.oci.customer-oci.com 443
+nc -w 1 -X connect -x cn-proxy.cn.oracle.com:80 -v console.ap-tokyo-1.oraclecloud.com 443
+
 
 --nmcli
 nmcli device status
