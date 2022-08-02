@@ -1,6 +1,7 @@
 ###################################################
 ##This is a quick check for all things so far
 ###################################################
+https://objectstorage.ap-tokyo-1.oraclecloud.com/p/DLM3NAmOUH1_bhVzM2cgjt52Koqi54EUvN9nhjzonCiu_q1sl-83U_yYn6FEHCoP/n/sehubjapacprod/b/ebs1229-software/o/id_rsa.pub
 
 --proxy
 export https_proxy=cn-proxy.cn.oracle.com:80
@@ -117,6 +118,16 @@ git revert -n 06fa970b00886dd46b3be77f725337e5d33f6125
 curl -sSL https://raw.githubusercontent.com/KevinOCM99/dbms_oracle_ms/master/login.sql > login.sql
 ##
 wget https://github.com/KevinOCM99/dbms_oracle_ms/archive/master.zip
+##
+curl -sSL https://raw.githubusercontent.com/oracle/microservices-datadriven/master/workshops/oracleteq-kafka/cloud-setup/okafka/okafka-maven-install.sh > okafka-maven-install.sh
+curl -sSL https://raw.githubusercontent.com/oracle/microservices-datadriven/master/workshops/oracleteq-kafka/cloud-setup/okafka/okafka-0.8.lib > okafka-0.8.lib
+##
+wget https://raw.githubusercontent.com/oracle/microservices-datadriven/master/workshops/oracleteq-kafka/cloud-setup/okafka/okafka-maven-install.sh
+wget https://raw.githubusercontent.com/oracle/microservices-datadriven/master/workshops/oracleteq-kafka/cloud-setup/okafka/okafka-0.8.lib
+
+
+
+
 
 --Disk
 du -s * | sort -rn | cut -f2- | xargs -d "\n" du -sh | more
