@@ -418,6 +418,8 @@ yum install docker-engine
 usermod -aG docker opc
 systemctl enable docker
 systemctl start docker
+mv /var/lib/docker /u01/docker-dir
+ln -s /u01/docker-dir/docker /var/lib/docker
 
 
 ###################################
