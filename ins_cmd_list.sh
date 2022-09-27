@@ -10,7 +10,7 @@ alias ins_ls='oci compute instance list --profile $PV --output table --query "da
 alias ins_al='cat ~/cloud_stuff/ins_cmd_list.sh | grep "##"'
 alias ins_cc='unalias ins_hh;unalias ins_lv;unalias ins_ll;unalias ins_ls;unalias ins_cc;unalias ins_al;unalias ins_cmd;unalias ins_ip'
 alias ins_cmd="echo -e 'oci compute instance action --action START --profile $PV --instance-id \noci compute instance action --action STOP --profile $PV --instance-id '"
-alias ins_pip="echo -e $'export INS_OCID= \noci compute instance list-vnics  --profile $PV --instance-id $INS_OCID | jq -r \'.data[].\"public-ip\"\''"
+alias ins_pip="echo -e $'export INS_OCID= \noci compute instance list-vnics  --profile $PV --instance-id \$INS_OCID | jq -r \'.data[].\"public-ip\"\''"
 echo '************* oci commands for adb ************'
 echo 'Please use ins_hh to get help of fast commands'
 echo 'Please use ins_al to show all'
